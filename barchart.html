@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<h1 id="bar_title">My Skills</h1>
+
+<ol>
+
+<li id = 'html'>
+<p>HTML</p>
+<div class="container html">
+  <div class="skills html">90%</div>
+</div>
+</li>
+
+<li id = 'css'>
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div></li>
+
+<li id = 'js'>
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div></li>
+</ol>
+
+<p>what shows above is just an example, you can change them or just delete them</p>
+<hr>
+<h3>Change Bar Chart:</h3>
+<div id='changeTitle'>
+  Title: <select  class="inputTitle" 
+  type="text" name="Title">
+  <option id='html' value="html">html</option>
+  <option id='css' value="css">css</option>
+  <option id='js' value="js">js</option>
+  <option id='php' value="php">php</option>
+</select>
+  Percentage: <input placeholder='Percentage'
+  class="inputPercentage" type="number"
+  name="Percentage">
+  Position: <select  class="inputPosition" 
+  type="text" name="Position">
+  <option value="left">left</option>
+  <option value="center">center</option>
+  <option value="right">right</option>
+</select>
+  <button class="changeTitle">Make Changes</button>
+</div>
+
+<div id='deletetitle'>
+  Title: <select  class="deleteTitle" 
+  type="text" name="title">
+  <option id='html'value="html">html</option>
+  <option id='css'value="css">css</option>
+  <option id='js'value="js">js</option>
+  <option id='php'value="php">php</option>
+</select>
+  <button class="deletetitle">Delete</button>
+</div>
+
+<h3>Create a new category</h3>
+<div id="title">
+  Title:<input placeholder="title" class="title"
+  type="text" name="title">
+  Percentage:<input placeholder="percentage" class="percentage"
+  type="number" name="percentage">
+  color:<input placeholder="color" class="color"
+  type="color" name="color">
+  Position: <select  class="addPosition" 
+  type="text" name="Position">
+  <option value="left">left</option>
+  <option value="center">center</option>
+  <option value="right">right</option>
+</select>
+  <button class="add">Add</button>
+</div>
+<p class="show"></p>
+
+<h3>Change the bar title</h3>
+<div id="bartitle">
+  Title:<input placeholder="bar title" class="bartitle"
+  type="text" name="bartitle">
+  <button class="changeBar">Change</button>
+</div>
+
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
